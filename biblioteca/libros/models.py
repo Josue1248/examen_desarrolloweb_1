@@ -10,4 +10,4 @@ class Libro(models.MOdel):
     Precio=DecimalField(max_length=10,)
     Creado=DataTimeField(auto_now_add=True)
         def __str__(self):
-            return str(self.Libro)
+            return str(self.Nombre)
