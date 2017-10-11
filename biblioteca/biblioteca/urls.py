@@ -1,13 +1,13 @@
-from django.conf.urls import include, url
+from django.conf.urls import url
 from django.contrib import admin
-from .views import home
-from libros.views import *
+from django.conf import settings
+from django.conf.urls.static import static
+from libros.views import lista_libros, detalle_libros, home
 
 urlpatterns = [
-    # Examples:
-    # url(r'^$', 'biblioteca.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', home, name='home'),
+    url(r'^admin/', admin.site.urls),
+    url(r'^$',home, name='home'),
+    url(r'^home/',home, name='home'),
+    url(r'^lista/',lista_libros, name='Vista'),
+    url(r'^detalles/(?P<id>\d)/$', detalle_libros, name='Detalles'),
 ]

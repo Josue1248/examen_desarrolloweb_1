@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Libro',
+    'libros',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -106,4 +106,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static-serve")
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "biblioteca/static-serve")
