@@ -3,12 +3,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Detalle</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
   </head>
   <body>
-    <h3>Detalle</h3>
-    <h4>Nombre:{{result.Nombre}}</h4>
+    <h3>Detalles:</h3>
+    <hr style="background-color: black;">
+    <h4>Nombre: {{result.Nombre}}</h4>
+    <h4>Autor: {{result.Autor}}</h4>
+    <h4>Editorial: {{result.Editorial}}</h4>
+    <h4>ISBN: {{result.ISBN}}</h4>
+    <h4>Precio: {{result.Precio}}</h4>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!– Importante llamar antes a jQuery para que funcione bootstrap.min.js   –>
+    <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>

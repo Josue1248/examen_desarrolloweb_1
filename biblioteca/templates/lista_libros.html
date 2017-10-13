@@ -4,11 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>Lista</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
   </head>
   <body>
     <h3> Lista</h3>
     {%for i in result %}
-    <h4>Nombre:{{i.Nombre}}</h4>
+    <h4>Nombre: {{i.Nombre}}</h4>
     {%endfor%}
 
 
